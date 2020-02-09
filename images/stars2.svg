@@ -1,0 +1,152 @@
+<svg width="1893" height="1034" viewBox="0 0 1893 1034" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    svg{
+        height: auto;
+        width : 100%;
+        <!-- background: #000; -->
+        overflow : hidden;
+    }
+
+    .star:nth-child(10n+0){
+        animation-name: twinkle;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+1){
+        animation-name: twinkle;
+        animation-duration: 11.5s;
+        animation-delay: 1.2s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+2){
+        animation-name: twinkle;
+        animation-duration: 9.5s;
+        animation-delay: 3s;    
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+3){
+        animation-name: twinkle;
+        animation-duration: 15s;
+        animation-delay: 8s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+4){
+        animation-name: twinkle;
+        animation-duration: 8.2s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+5){
+        animation-name: twinkle;
+        animation-duration: 13.7s;
+        animation-delay: 15s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+6){
+        animation-name: twinkle;
+        animation-duration: 10.6s;
+        animation-delay: 7.3s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+7){
+        animation-name: twinkle;
+        animation-duration: 14.3s;
+        animation-delay: 5.9s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+8){
+        animation-name: twinkle;
+        animation-duration: 12.9s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .star:nth-child(10n+9){
+        animation-name: twinkle;
+        animation-duration: 9.2s;
+        animation-delay: 12.2s;
+        animation-iteration-count: infinite;
+    }
+
+    .star{
+        opacity: 0.5;
+        filter: drop-shadow( 2px 2px 1px rgba(255, 255, 255, 0));
+    }
+
+    @keyframes twinkle{
+        0%,12%,100%{
+            opacity: 0.5;
+            filter: drop-shadow( 1px 1px 1px rgba(255, 255, 255, 0));
+        }
+        2% { 
+            opacity: 0.3;
+            border: 100px solid white;
+            filter: drop-shadow( 1px 1px 1px rgba(255, 255, 255, 0));
+        }
+        7% {
+            opacity: 10;
+            border: 100px solid white;
+            filter: drop-shadow( 1px 1px 1px rgba(255, 255, 255, 1));
+        }
+    }
+</style>
+<circle class="star" cx="19.253" cy="2.96201" r="2.96201" fill="white"/>
+<circle class="star" cx="80.4679" cy="655.098" r="2.96201" fill="white"/>
+<circle class="star" cx="432.454" cy="970.553" r="2.96201" fill="white"/>
+<ellipse class="star" cx="111.816" cy="37.7656" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="182.904" cy="600.548" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="2.22151" cy="832.572" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="14.0701" cy="423.815" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="213.512" cy="955.496" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="328.783" cy="97.4995" rx="2.46834" ry="2.71518" fill="white"/>
+<ellipse class="star" cx="758.275" cy="22.9556" rx="2.46834" ry="2.71518" fill="white"/>
+<circle class="star" cx="665.465" cy="74.544" r="2.46834" fill="white"/>
+<circle class="star" cx="827.882" cy="220.67" r="2.46834" fill="white"/>
+<circle class="star" cx="581.048" cy="1025.84" r="2.46834" fill="white"/>
+<circle class="star" cx="810.605" cy="632.883" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="92.8092" cy="1030.78" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="458.125" cy="720.263" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="366.796" cy="486.264" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="497.125" cy="596.352" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="874.253" cy="2.96201" r="2.96201" fill="white"/>
+<circle class="star" cx="935.468" cy="655.098" r="2.96201" fill="white"/>
+<circle class="star" cx="1287.45" cy="970.553" r="2.96201" fill="white"/>
+<ellipse class="star" cx="966.817" cy="37.7656" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1037.91" cy="600.548" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="857.221" cy="832.572" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="869.069" cy="423.815" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1068.51" cy="955.496" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1183.78" cy="97.4995" rx="2.46834" ry="2.71518" fill="white"/>
+<ellipse class="star" cx="1613.28" cy="22.9556" rx="2.46834" ry="2.71518" fill="white"/>
+<circle class="star" cx="1520.46" cy="74.544" r="2.46834" fill="white"/>
+<circle class="star" cx="1682.88" cy="220.67" r="2.46834" fill="white"/>
+<circle class="star" cx="1436.05" cy="1025.84" r="2.46834" fill="white"/>
+<circle class="star" cx="1665.61" cy="632.883" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="947.81" cy="1030.78" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1313.12" cy="720.263" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1221.8" cy="486.264" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1352.12" cy="596.352" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1332.25" cy="2.96201" r="2.96201" fill="white"/>
+<circle class="star" cx="1393.47" cy="655.098" r="2.96201" fill="white"/>
+<circle class="star" cx="1745.45" cy="970.553" r="2.96201" fill="white"/>
+<ellipse class="star" cx="1424.82" cy="37.7656" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1495.91" cy="600.548" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1315.22" cy="832.572" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1327.07" cy="423.815" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1526.51" cy="955.496" rx="2.22151" ry="1.72784" fill="white"/>
+<ellipse class="star" cx="1641.78" cy="97.4995" rx="2.46834" ry="2.71518" fill="white"/>
+<circle class="star" cx="1894.05" cy="1025.84" r="2.46834" fill="white"/>
+<circle class="star" cx="1405.81" cy="1030.78" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1771.12" cy="720.263" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1679.8" cy="486.264" r="2.46834" fill="#C4C4C4"/>
+<circle class="star" cx="1810.12" cy="596.352" r="2.46834" fill="#C4C4C4"/>
+</svg>

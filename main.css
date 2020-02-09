@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Kaushan+Script&display=swap');
+
+
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    height: 10%;
+    width: auto;
+}
+
+#logo>img {
+    height: 100%;
+    width: auto;
+}
+
+#background {
+    background-image: url(./images/stars2.svg), linear-gradient(#010115, #0E0E4D);
+    position: absolute;
+    z-index: -5;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat, no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#main-cont {
+    position: absolute;
+    z-index: 10;
+    height: 55%;
+    width: 65%;
+    background: transparent;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.26vw;
+    text-align: center;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#fixed-head {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#fixed-head>.main {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#fixed-head>.sub {
+    font-size: 0.35em;
+    text-align: right;
+    margin-top: -5%;
+}
+
+.section-head-cont {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+    color: transparent;
+    transition: text-shadow 1.5s linear !important;
+    z-index: 7;
+}
+
+.active {
+    color: transparent;
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+    z-index: 8;
+}
+
+.main-head {
+    width: 30%;
+    font-size: 0.5em;
+    border: 2px solid white;
+    border-radius: 0.4em;
+    cursor: pointer;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    transition: background 200ms linear, color 200ms linear, box-shadow 200ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.main-head:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+    color: #010115;
+    background: white;
+}
+
+
+.sub-text {
+    font-size: 0.3em !important;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px), (orientation: portrait){
+    #logo{
+        top: 5vw;
+        left: 5vw;
+        height: 6%;
+    }
+
+    #main-cont{
+        width: 80%;
+        font-size: 3.35vh;
+    }
+
+    #fixed-head{
+        width: 100%;
+        top: 15%;
+        display: flex;
+    }
+
+    #fixed-head > .main{
+        font-size: 2.3em;
+    }
+
+    #fixed-head > .sub{
+        font-size: 0.6em;
+        margin-top: -3%;
+    }
+
+    .section-head-cont{
+        top: 65%;
+    }
+
+    .main-head{
+        background: white;
+        color: transparent;
+        transition: text-shadow 1.5s linear !important;
+        text-shadow: 0px 0px 10px rgba(1,1,21,0);
+        width: 50%;
+        font-size: 1em;
+    }
+
+    .active .main-head{
+        color: transparent;
+        text-shadow: 0px 0px 0px rgba(1,1,21,1);
+    }
+
+    .sub-text{
+        font-size: 0.6em !important;
+        width: 100%;
+    }
+}
