@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Kaushan+Script&display=swap');
 
-
 html,
 body {
     margin: 0;
     height: 100vh;
-    overflow: hidden;
     position: relative;
+    overflow-x: hidden;
+    background-image: url("./images/stars2.svg"),linear-gradient(180deg, #000014 0%, #0E0E4E 100%);
+    background-repeat: repeat,no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 canvas {
     display: block;
     position: absolute;
     z-index: 0;
+}
+
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #000014;
+    -webkit-box-shadow: inset 0 0 4px #000014;
+    background-color: #555;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #555;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
 }
 
 #logo {
@@ -29,12 +47,13 @@ canvas {
 }
 
 #background {
-    background-image: url(./images/stars2.svg), linear-gradient(#010115, #0E0E4D);
+    /*background-image: url(./images/stars2.svg), linear-gradient(#010115, #0E0E4D);*/
     position: absolute;
     z-index: -5;
     height: 100%;
     width: 100%;
-    background-repeat: repeat, no-repeat;
+    background-image: url("./images/stars2.svg"),linear-gradient(180deg, #000014 0%, #0E0E4E 100%);
+    background-repeat: repeat,no-repeat;
     background-size: contain;
     background-attachment: fixed;
 }
@@ -93,9 +112,32 @@ canvas {
     font-family: 'Dosis', sans-serif;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
     color: transparent;
-    transition: text-shadow 1.5s linear !important;
+    transition: text-shadow 1.5s linear, opacity 0.7s ease	 !important;
     z-index: 7;
 }
+
+.goback {
+    display: none;
+    padding: 4px 6px;
+    background: white;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2%;
+    color: #000014;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.goback:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
 
 .active {
     color: transparent;
@@ -103,15 +145,35 @@ canvas {
     z-index: 8;
 }
 
+#nav {
+    display: none;
+    visibility: hidden;
+}
+
+#About-us {
+    display: none;
+}
+#Convenors-cont {
+    display: none;
+}
+
+#proshow-cont {
+    display: none;
+}
+
+#foot {
+    display: none;
+}
+
 .main-head {
     width: 30%;
     font-size: 0.5em;
-    border: 2px solid white;
+    border: 2px solid rgba(255,255,255,1);
     border-radius: 0.4em;
     cursor: pointer;
     margin-bottom: 2%;
     box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-    transition: background 200ms linear, color 200ms linear, box-shadow 200ms linear;
+    transition: background 200ms linear, color 200ms linear, box-shadow 200ms linear, border 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +192,21 @@ canvas {
     width: 100%;
 }
 
-@media screen and (max-width: 700px), (orientation: portrait){
+#signoff {
+	margin-top: 5px;
+	font-family: 'Tangerine';
+	font-size: 2.2em;
+}
+.hideme {
+	opacity: 0;
+}
+@media screen and (max-width: 700px) and (min-width:330px), (orientation: portrait){
+	.goback {
+		margin: 3%;
+		padding: 2px 4px;
+		font-size: 0.8em;
+	}
+
     #logo{
         top: 5vw;
         left: 5vw;

@@ -4,9 +4,18 @@
 <head>
 	<title>Revels'20 | Cultural Fest of Manipal Institute of Technology</title>
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Tangerine:700&display=swap" rel="stylesheet">
 	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+   	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+   	<link rel="manifest" href="./images/site.webmanifest">
+   	<link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+   	<meta name="msapplication-TileColor" content="#01011b">
+   	<meta name="theme-color" content="#01011b">
 </head>
 
 <body>
@@ -25,17 +34,15 @@
 			</div>
 		</div>
 		<div class="section-head-cont active">
-			<div class="main-head">
+			<div class="main-head" id="aboutBut">
 				About Us
 			</div>
 			<div class="sub-text">
 				We are Revels'20, largest Cultural fest of South India!
-				<br>
-				Blah blah blah, blah blah blablablaaaah..!
 			</div>
 		</div>
 		<div class="section-head-cont">
-			<div class="main-head">
+			<div class="main-head" id="eventBut">
 				Events
 			</div>
 			<div class="sub-text">
@@ -43,7 +50,7 @@
 			</div>
 		</div>
 		<div class="section-head-cont">
-			<div class="main-head">
+			<div class="main-head" id="proBut">
 				Proshow
 			</div>
 			<div class="sub-text">
@@ -51,7 +58,7 @@
 			</div>
 		</div>
 		<div class="section-head-cont">
-			<div class="main-head">
+			<div class="main-head" id="sponBut">
 				Sponsors
 			</div>
 			<div class="sub-text">
@@ -59,10 +66,212 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.js"></script>
 	<script src="main.js"></script>
+		<div class="wrapper">
+			<div class="container" id="fake">
+
+			</div>
+			<div class="navbar" id="nav">
+				<div class="logo">
+					<!-- <img class="logolol" src="Revels2020_Logo_DarkBG 1.svg" alt="Logo-dark"> -->
+				</div>
+				<div class="topnav" id="myTopnav"> 
+						<a class="ok" href="#">Events</a>
+						<a  href="#">Proshow</a>
+						<a  href="#">Sponsors</a>
+						<a  href="#">Contacts</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						  </a>  
+				</div>
+			</div>
+			<!-- About us cont -->
+	<div class="container" id="About-us">
+		<div class="heading-about-us">About Us</div>
+		<div class="paragraph-greeting">
+				The world as we know today is not what it used to be and is no more than a shadow cast in the dim blue lights from screens , barely a semblance to the lush green of the forests and icy blue of the mountain tops that it should have been. With every new day comes a report of yet another catastrophe and we find ourselves wondering, have we run out of time? 
+				<br><br>
+				Have we gone too far to turn back? And yet it is amidst disaster that another feeling arises, of hope, of a chance at rebuilding the world, a chance at making it a world apart. With this hope in our hearts we present to you the theme for Revels '20, Qainaat : A world apart. 
+				<br><br>
+				Revels is a national level cultural and sports fest from Manipal Institute of Technology that aims to unite a crowd that is diverse in more ways than one. An arena for holistic learning and a chance to express thoughts and ideas through art, music , dance , drama , sports and numerous other events.
+				<br><br>
+				Join us this March, from the <b>4th</b> to the <b>7th</b>, for what promises to be the best four days of your life! 
+				<br>
+				Regards, <br>
+				<div id="signoff">Team Revels</div>
+<!-- 				<br>
+				On-spot registrations for cultural events are available. The last date for sports registrations is 1st March -->
+		</div>
+		<img src="./Group 4.svg" alt="" class="satellite-svg scale-out-top" id="satellite-svg"  data-lax-preset="linger" >
+	</div>
+	
+			<!-- Convernors -->
+			
+			
+	<div class="container-proshow" id="Convenors-cont">
+		<div class="heading-about-us">Conveners</div>
+		<div class="conveners-flex">
+				<div class="convener-profile">
+						<img src="./astronaut.svg" alt="" class="convener-img">
+						<div class="convener-name">Swadin Routrey</div>
+						<div class="convener-contact">+919812345678</div>
+				</div>
+				<div class="convener-profile">
+						<img src="./astronaut.svg" alt="" class="convener-img">
+						<div class="convener-name">Swadin Routrey</div>
+						<div class="convener-contact">+919812345678</div>
+				</div>
+				<div class="convener-profile">
+						<img src="./astronaut.svg" alt="" class="convener-img">
+						<div class="convener-name">Swadin Routrey</div>
+						<div class="convener-contact">+919812345678</div>
+				</div>
+				<div class="convener-profile">
+						<img src="./astronaut.svg" alt="" class="convener-img">
+						<div class="convener-name">Swadin Routrey</div>
+						<div class="convener-contact">+919812345678</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="container-proshow" id="events-cont">
+		<div class="heading-about-us">Events</div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <!-- <div class="carouselphoto first">
+                        <img class="nicelogo" src="revels-blueblack_DarkBG 1.svg" alt="lol">
+                        <span class="cat-name">Informals</span>
+                        <div class="content_events">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis accusamus a minus esse ex et perferendis culpa, quia neque voluptatibus distinctio dolorum velit dolor aut ut necessitatibus beatae quam vero.</div>
+                    </div> -->
+                </div>
+            </div>
+        
+                   
+                  <div class="carousel__button--next"></div>
+                  <div class="carousel__button--prev"></div>
+                  <div class="card-flex">
+                
+                
+                </div>
+
+	</div>
+	
+		<!-- proshow -->
+		<div class="container-proshow" id="proshow-cont">
+			<div class="heading-about-us">Proshow</div>
+						<!-- <div class="artist-card">
+				<img src="./prateek.jpeg" alt="prateek" class="artist">
+				<div class="right">
+				<h2 id="art-name">Joke</h2>
+				<p id="art-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis dicta debitis veritatis corporis vel quo fugit aspernatur, repudiandae impedit ad consequuntur natus pariatur vitae. Quibusdam sint necessitatibus velit perspiciatis!</p></div>
+			</div>
+			<div class="artist-card-r">
+				<img src="./prateek.jpeg" alt="prateek" class="artist">
+				<div class="right">
+				<h2 id="art-name">Joke</h2>
+				<p id="art-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis dicta debitis veritatis corporis vel quo fugit aspernatur, repudiandae impedit ad consequuntur natus pariatur vitae. Quibusdam sint necessitatibus velit perspiciatis!</p></div>
+			</div>
+			
+			<div class="artist-card">
+				<img src="./prateek.jpeg" alt="prateek" class="artist">
+				<div class="right">
+				<h2 id="art-name">Joke</h2>
+				<p id="art-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis dicta debitis veritatis corporis vel quo fugit aspernatur, repudiandae impedit ad consequuntur natus pariatur vitae. Quibusdam sint necessitatibus velit perspiciatis!</p></div>
+			</div>
+			<div class="artist-card-r"></div>
+				<img src="./prateek.jpeg" alt="prateek" class="artist"   >
+				<div class="right">
+				<h2 id="art-name">Joke</h2>
+				<p id="art-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis dicta debitis veritatis corporis vel quo fugit aspernatur, repudiandae impedit ad consequuntur natus pariatur vitae. Quibusdam sint necessitatibus velit perspiciatis!</p></div>
+			</div>   -->
+			<div id="proshow-body">
+			<div class="proshow-text">
+				Proshow of Revels is the Soul of MIT's Cultural Festival and involves eminent personalities as star performers for the event. ProShow has traditionally attracted a large crowd from in and around Manipal, leaving them with fond memories to reminisce.
+			</div>
+			<div id="vertical-r">&nbsp;</div>
+				<a class="proshow-red" href="https://proshow.mitrevels.in">Proshow Passes</a>
+			</div>
+		</div>
+		
+		<!-- sponsors -->
+		<div class="container-proshow" id="sponsor-cont">
+			<div class="heading-about-us">Sponsors</div>
+			<div class="sponsors-flex">
+				<div class="sponsor" id="long">
+					<img src="./max 1.png" alt="max" class="spon-img">
+					<div class="sponsor-det">
+						<h2 class="s1">Max Fashion</h2>
+						<h3 class="s2">Title Sponsor</h3>
+					</div>
+				</div>
+				<div class="sponsor">
+					<img src="./Asset 11 1.png" alt="realme" class="spon-img">
+					<div class="sponsor-det">
+						<h2 class="s1">Realme</h2>
+						<h3 class="s2">Tech Sponsor</h3>
+					</div>
+				</div>
+				<div class="sponsor" >
+					<img src="./coke-studio 1.png" alt="coke" class="spon-img">
+					<div class="sponsor-det">
+						<h2 class="s1">Coke Studio</h2>
+						<h3 class="s2">Sponsor</h3>
+					</div>
+				</div>
+				<div class="sponsor">
+					<img src="./toshiba-audio 1.png" alt="tosh" class="spon-img">
+					<div class="sponsor-det">
+						<h2 class="s1">Toshiba</h2>
+						<h3 class="s2">Audio Sponsor</h3>
+					</div>
+				</div>
+				<div class="sponsor" >
+					<img src="./tinder 1.png" alt="tinder" class="spon-img">
+					<div class="sponsor-det">
+						<h2 class="s1">Tinder</h2>
+						<h3 class="s2">Partner</h3>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		
+		<!-- footer -->
+		<div class="footer" id="foot">
+			<img class="logofoot" src="Group 22.svg" alt="neij">
+			<div class="foot">
+				<h3 id="follow" >Follow us</h3>
+				<a href="https://www.facebook.com/mitrevels/" target="_blank" class="social">Facebook</a>
+    			<a href="https://www.instagram.com/revelsmit/" target="_blank" class="social">Instagram</a>
+			</div>
+		</div>
+		<p id="dev"> Desinged and Developed by System Admin at Revels'20 </p>
+		<div class="goback" id="goback1">
+			Back to Home &#8594;
+		</div>
+		<div class="goback" id="goback2">
+			Back to Home &#8594;
+		</div>
+		<div class="goback" id="goback3">
+			Back to Home &#8594;
+		</div>
+		<div class="goback" id="goback4">
+			Back to Home &#8594;
+		</div>
+			
+	</div>
+		
+
+	<!-- <script src="script.js"></script> -->
+	<script src="./app.js"></script>
+	<script src="lib/lax.min.js" ></script>
+	<script src="script1.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    
 </body>
 
 </html>

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+body {
+	font-family: 'Ropa Sans', sans-serif;
+	margin: 0;
+    background: linear-gradient(180deg, #000014 0%, #0E0E4E 100%);
+}
+h1{
+    color: white
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.card-flex{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 32vh;
+}
+
+.card{
+    width: 100vh;
+    height: 20vh;
+    padding: 10px 20px 10px 20px;
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #030313;
+    border-radius: 10px;
+    color: white;   
+}
+.card:nth-child(even) {
+    background-color: #f6f6f6;
+    color: #030313;
+  }
+
+
+
+.cont{
+    font-size: .7em;
+}
+
+.size{
+    font-size: .7em;
+    margin-top: 6%;
+}
+
+.carousel-wrapper {
+    width: 80%;
+    height: 10vh;
+    margin: 1% 11%;
+  }
+
+  .carousel {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+  .carouselphoto {
+    opacity: 0;
+    position: absolute;
+    background-color: #FFF;
+    width: 60vw;
+    border-radius: 2%;
+    height: 30vh;
+    padding: 2rem 2rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  .nicelogo
+  {
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+    width: 20%;
+  }
+  .cat-name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+  }
+  .content_events
+  {
+    width: 100%;
+    font-family: 'Ropa Sans';
+    font-size: .8rem;
+    
+  }
+  
+  /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+  .carouselphoto.initial,
+  .carouselphoto.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+  }
+  
+  /* Set 'z-index' to sit behind our '.active' item. */
+  .carouselphoto.prev,
+  .carouselphoto.next {
+    z-index: 800;
+  }
+  
+  /* Translate previous item to the left */
+  .carouselphoto.prev {
+    transform: translateX(-100%);
+  }
+  
+  /* Translate next item to the right */
+  .carouselphoto.next {
+    transform: translateX(100%);
+  }
+  
+  /* Style navigation buttons to sit in the middle, either side of the carousel. */
+  .carousel__button--prev,
+  .carousel__button--next {
+    position: absolute;
+    top:50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #FFF;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer; 
+    z-index: 10010; /* Sit on top of everything */
+    border:1px solid black;
+  /*  opacity: 0;  Hide buttons until carousel is initialised 
+    transition:opacity 1s;*/
+  }
+  
+  .carousel__button--prev {
+    left:0;
+  }
+  
+  .carousel__button--next {
+    right:0;
+  }
+  
+  /* Use pseudo elements to insert arrows inside of navigation buttons */
+  .carousel__button--prev::after,
+  .carousel__button--next::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+  
+  .carousel__button--next::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  @media only screen and (min-width: 600px) {
+    .card{
+        width: 25%;
+    }
+    .carousel-wrapper {
+      width: 100%;
+      height: 10vh;
+      margin: 1% 11%;
+    }
+    .carouselphoto {
+      opacity: 0;
+      position: absolute;
+      background-color: #FFF;
+      width: 70vw;
+      border-radius: 2%;
+      height: 20vh;
+      padding: 2rem 2rem;
+      z-index: 100;
+      transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  .card-flex{
+    margin-top: 18vh;
+  }
+}
+@media only screen and (min-width: 790px) {
+  .card{
+      width: 25%;
+      height: 65%;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+    height: 7vh;
+    margin: 1% 11%;
+  }
+  .card-flex{
+    margin-top: 25vh;
+  }
+}

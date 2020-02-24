@@ -1,0 +1,832 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap');
+ /* html,
+body,h2,h1,h3{
+    margin: 0;
+    padding: 0;
+}  */
+/* body{
+    /* background: linear-gradient(180deg, #000014 0%, #0E0E4E 100%); */
+    /* font-family: 'Ropa Sans', sans-serif; */
+.navbar
+{
+    position: relative;
+    width: 100%;
+    height: 6%;
+    display: flex;
+}
+.logo
+{
+    margin-left: 5%;
+    float: left;
+}
+.logolol
+{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+   
+}
+.topnav
+{
+    margin-right: 3%;
+    margin-left: auto;
+}
+ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Dosis',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 120px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+.topnav .icon
+{
+    display: none;
+}
+a:hover
+{
+    font-weight: 1000;
+} 
+/* .wrapper{
+    background: linear-gradient(180deg, #000014 0%, #0E0E4E 100%);
+} */
+.container{
+    font-family: 'Dosis', sans-serif;
+    width: 100vw;
+    color: white;
+    position: relative;
+    
+}
+
+.wrapper{
+    font-family: 'Dosis',sans-serif;
+}
+
+.artist{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.artist-card,
+.artist-card-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#art-name{
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-top: 15px;
+    text-align: center;
+}
+#astro{
+    position: absolute;
+    margin-left: 6%;
+    margin-bottom: 10%;
+}
+
+#art-desc{
+    font-size: .9em;
+    text-align: center;
+    margin-left: 8.5%;
+    margin-right: 7%;
+    letter-spacing: 0.03em;
+    line-height: 19px;   
+    font-weight: 500;   
+}
+
+.footer
+{
+    margin-top: 5%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.scale-out-top {
+	-webkit-animation: scale-out-top 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-top 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.logofoot
+{
+    width: 30%;
+    height: 100%;
+    margin-right: 8%;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    /*display: none;*/
+}
+#follow{
+    color: #ffffff;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin:0 0 15% 0;
+}
+.social{
+    color: #ffffff;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    text-align: end;
+    line-height: normal;
+    padding: 2px;
+}
+.container-proshow{
+    height: 100%;
+    color: white;
+    display: none;
+}
+
+.revels-logo {
+    width: 10%;
+    height: 10%;
+    margin: 0 0 0 3%;
+}
+
+.proshow-text{
+    width: 60vw;
+}
+#vertical-r{
+    width: 60vw;
+    height: 2px;
+    background-color:white;margin-right: 4%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+#proshow-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    margin-left: 5%;
+}
+
+.proshow-text{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 65%;
+}
+
+.proshow-red{
+    font-weight: bold;
+    width: 50%;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 0.4em;
+    cursor: pointer;
+    margin-bottom: 1.5%;
+    margin-right: 3.5%;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    transition: background 200ms linear, color 200ms linear, box-shadow 200ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px; */
+    height: 9vh;
+}
+
+.proshow-red:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+    color: #010115;
+    background: white;
+}
+
+
+.heading-about-us {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    margin: 2% 0% 2% 5%;
+
+}
+
+#fake {
+    background: transparent;
+}
+
+.paragraph-greeting {
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 41px;
+    color: white;
+    margin: 0 10% 10% 5%;
+}
+
+.satellite-svg {
+    position: absolute;
+    width: 15%;
+    right: 1%;
+    top: 75%;
+}
+
+.heading-conveners {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 91px;
+    color: #FFFFFF;
+}
+
+.convener-img {
+    width: 100%;
+    height: 100%;
+}
+
+.conveners-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.convener-proflie {
+    display: flex;
+    width: 100%;
+}
+.convener-name {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.convener-contact {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.sponsors-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.spon-img{
+    width: 20%;
+    height: 100%;
+    margin-bottom: 8%;
+    margin-top: 4%;
+}
+
+.s1{
+    /* font-weight: bold; */
+    font-weight: lighter;
+    font-size: 1.2em;
+    
+}
+.s2{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.sponsor-det{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     width: 24%; 
+    vertical-align: middle;
+}
+
+
+
+#dev{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    text-align: center;
+    display: none;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 650px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+@media only screen and (max-width: 650px) {
+    .paragraph-greeting {
+        font-size: 1em;
+        line-height: 30px;
+    }
+    #follow {
+        font-size: 1.1em;
+    }
+    .social {
+        font-size: 0.8em;
+    }
+    #dev {
+        font-size: .75em;
+    }
+    #vertical-r{
+        margin-right: 0;
+    }
+    #proshow-body{
+        height: 100%;
+        margin-left: 0;
+    }
+    .proshow-red{
+        height: 5vh;
+        margin-right: 0;
+    }
+    .topnav.responsive 
+    {position: relative;
+    /* margin-top: 20%; */
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+    }
+    .fa fa-bar{
+        margin-top: 0%;
+    }
+
+    a{
+        
+        font-size: 30px;
+        line-height: 0px;
+        /* padding: 20px; */
+        color: #FFFFFF;
+    }
+    img
+{
+    margin-top: 5%;height: auto;
+    width: 40%;
+    height: 40%;
+   
+}
+.ok
+{
+   margin-top: 36%;
+}
+.satellite-svg {
+    display: none;
+}
+
+.heading-about-us {
+    margin: 10% 0% 2% 5%;
+}
+
+  }
+
+@media only screen and (min-width: 600px) {
+
+    .artist{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    h1{
+        display: none;
+    }
+    .artist-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .artist-card-r{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+    }
+
+    .right{
+        width: 45%;
+        margin-top: 30px;
+        text-align: left;
+    }
+    #art-name{
+        text-align: left;
+        margin-left: 8.5%
+    }
+
+    #art-desc{
+        font-size: .87em;
+        text-align: left;
+    }
+
+    .sponsors-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sponsor{
+        width: 50vw;
+        height: 25vh;
+    }
+    #long{
+        width: 100vw;
+    }
+    .conveners-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .convener-profile{
+        width: 50%;
+        
+    }
+    #proshow-body{
+        flex-direction: row-reverse;
+    }
+
+    #vertical-r{
+        height: 30vh;
+        width: 2px;
+    }
+
+    .convener-img{
+        width: 28%;
+        margin-left: 32%;
+    }
+
+    .spon-img{
+        width: 30%;
+        height: 30%;
+        margin-bottom: 8%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    h1{
+        display: none;
+    }
+    .artist{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    #art-name{
+        text-align: left;
+        padding-left: 44px;
+    }
+
+    .sponsors-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sponsor{
+        width: 40%;
+        height: 33vh;
+    }
+    .spon-img{
+        width: 30%;
+        height: 50%;
+        margin-bottom: 4%;
+    }
+        #proshow-body{
+        width: 90vw;
+    }
+    .proshow-text{
+        width: 50vw;
+    }
+    .proshow-red{
+        width: 20%;
+    }
+    .proshow-text{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .artist{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+
+    .sponsors-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sponsor{
+        width: 50%;
+        height: 33vh;
+    }
+    .spon-img{
+        width: 18%;
+        height: 60%;
+        margin-bottom: 4%;
+    }
+}
+
+.card-flex{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 32vh;
+    margin-bottom: 10%;
+}
+
+.card{
+    width: 100vh;
+    height: 35vh;
+    padding: 10px 20px 10px 20px;
+    margin: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #030313;
+    border-radius: 10px;
+    color: white;   
+}
+.card:nth-child(even) {
+    background-color: #f6f6f6;
+    color: #030313;
+  }
+
+
+
+.cont{
+  font-family: 'Dosis';
+    font-size: 1em;
+}
+
+.size{
+  font-family: 'Dosis';
+    font-size: 1em;
+    margin-top: 4%;
+}
+
+.carousel-wrapper {
+    width: 80%;
+    height: 10vh;
+    margin: 1% 11%;
+  }
+
+  .carousel {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+  .carouselphoto {
+    opacity: 0;
+    position: absolute;
+    background-color: #FFF;
+    width: 60vw;
+    border-radius: 5px;
+    height: 30vh;
+    padding: 1rem 2rem 2rem 2rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  h3 {
+    display: block;
+    font-size: 1.2em;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.leaf
+{
+  height: 100%;
+  width: 20%;
+  position: absolute; 
+  top: 25px;
+  bottom: 0px;
+  right: 0px;
+}
+  .cat-name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    color: black;
+
+  }
+  .content_events
+  {
+    width: 80%;
+    font-weight: lighter;
+    font-family: 'Dosis';
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+  .carouselphoto.initial,
+  .carouselphoto.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+  }
+  
+  /* Set 'z-index' to sit behind our '.active' item. */
+  .carouselphoto.prev,
+  .carouselphoto.next {
+    z-index: 800;
+  }
+  
+  /* Translate previous item to the left */
+  .carouselphoto.prev {
+    transform: translateX(-100%);
+  }
+  
+  /* Translate next item to the right */
+  .carouselphoto.next {
+    transform: translateX(100%);
+  }
+  
+  /* Style navigation buttons to sit in the middle, either side of the carousel. */
+  .carousel__button--prev,
+  .carousel__button--next {
+    position: absolute;
+    top:50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #FFF;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer; 
+    z-index: 10010; /* Sit on top of everything */
+    border:1px solid black;
+  /*  opacity: 0;  Hide buttons until carousel is initialised 
+    transition:opacity 1s;*/
+  }
+  
+  .carousel__button--prev {
+    left:20px;
+  }
+  
+  .carousel__button--next {
+    right:20px;
+  }
+  
+  /* Use pseudo elements to insert arrows inside of navigation buttons */
+  .carousel__button--prev::after,
+  .carousel__button--next::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+  
+  .carousel__button--next::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  @media only screen and (min-width: 600px) {
+    .card{
+        width: 25%;
+    }
+    .carousel-wrapper {
+      width: 100%;
+      height: 10vh;
+      margin: 1% 11%;
+    }
+    .carouselphoto {
+      opacity: 0;
+      position: absolute;
+      background-color: #FFF;
+      width: 70vw;
+      border-radius: 5px;
+      height: 30vh;
+      padding: 1rem 2rem 2rem 2rem;
+      z-index: 100;
+      transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  .card-flex{
+    margin-top: 18vh;
+  }
+}
+@media only screen and (max-width:620px) {
+  .carousel__button--prev::after,
+  .carousel__button--next::after {
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .carouselphoto.prev{
+    margin: 0;
+    padding: 0;
+  }
+  .carousel__button--prev {
+    left:10px;
+  }
+  
+  .carousel__button--next {
+    right:10px;
+  }
+  .carousel__button--prev,
+  .carousel__button--next {
+    width: 1rem;
+    height: 1rem;
+  }
+  .content_events
+  {
+    width: 95%;
+    font-weight: lighter;
+    font-family: 'Dosis';
+    font-size: 0.7rem;
+  }
+  .cat-name
+  {
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 7px;
+    color: black;
+  }
+  .carouselphoto {
+    width: 70vw;
+    border-radius: 5px;
+    height: 34vh;
+    padding: .9rem .9rem 1.5rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  div.cont{
+    font-family: 'Dosis';
+    font-size: 0.6em;
+  }
+  h3 {
+    font-size: 1em;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+}
+.leaf
+{ opacity: 0;
+  width: 60%;
+  position: absolute; 
+    bottom: 0px;
+    right: 0%;
+}
+  
+}
+@media only screen and (min-width: 790px) {
+  .card{
+      width: 25%;
+      /* height: 65%; */
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+    height: 7vh;
+    margin: 1% 11%;
+  }
+  .card-flex{
+    margin-top: 35vh;
+  }
+}

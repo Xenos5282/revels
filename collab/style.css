@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap');
+html,
+body,h2,h1,h3{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(180deg, #000014 0%, #0E0E4E 100%);
+    font-family: 'Ropa Sans', sans-serif;
+}
+h1{
+    padding-top: 4%;
+    padding-left: 6%;
+}
+
+
+.navbar
+{
+    position: relative;
+    width: 100%;
+    height: 6%;
+    display: flex;
+}
+.logo
+{
+    margin-left: 5%;
+    float: left;
+}
+.logolol
+{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+   
+}
+.topnav
+{
+    margin-right: 3%;
+    margin-left: auto;
+}
+ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Dosis',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 120px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+.topnav .icon 
+{
+    display: none;
+}
+a:hover
+{
+    font-weight: 1000;
+}
+
+
+.container{
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+}
+
+.artist{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.artist-card,
+.artist-card-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#art-name{
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-top: 15px;
+    text-align: center;
+}
+#astro{
+    position: absolute;
+    margin-left: 6%;
+    margin-bottom: 10%;
+}
+
+#art-desc{
+    font-size: .9em;
+    text-align: center;
+    margin-left: 8.5%;
+    margin-right: 7%;
+    letter-spacing: 0.03em;
+    line-height: 19px;   
+    font-weight: 500;   
+}
+
+.footer
+{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logofoot
+{
+    width: 35%;
+    height: 100%;
+    margin-right: 8%;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+#follow{
+    color: #ffffff;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.social{
+    color: #ffffff;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: .9em;
+    text-align: end;
+}
+.container-proshow{
+    height: 100%;
+    color: white;
+}
+
+.revels-logo {
+    width: 10%;
+    height: 10%;
+    margin: 0 0 0 3%;
+}
+
+.heading-about-us {
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    color: #FFFFFF;
+    margin: 2% 0% 2% 5%;
+
+}
+
+.paragraph-greeting {
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin: 0 10% 0 5%;
+}
+
+.satellite-svg {
+    position: absolute;
+    width: 15%;
+    right: 1%;
+    top: 70%;
+}
+
+.heading-conveners {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 91px;
+    color: #FFFFFF;
+    margin: 15% 0% 2% 5%;
+}
+
+.convener-img {
+    width: 100%;
+    height: 100%;
+}
+
+.conveners-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 5% 0% 0%;
+}
+
+.convener-proflie {
+    display: flex;
+    width: 100%;
+}
+.convener-name {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.convener-contact {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.sponsors-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.spon-img{
+    width: 20%;
+    height: 100%;
+    margin-bottom: 8%;
+    margin-top: 4%;
+}
+
+.s1{
+    font-weight: bold;
+    font-size: 1.0em;
+}
+.s2{
+    font-weight: 400;
+    font-size: 1.1em;
+}
+.sponsor-det{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    vertical-align: middle;
+}
+
+
+#dev{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: .75em;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+@media only screen and (max-width: 650px) {
+    .topnav.responsive 
+    {position: relative;
+    /* margin-top: 20%; */
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+    }
+    .fa fa-bar{
+        margin-top: 0%;
+    }
+
+    a{
+        
+        font-size: 30px;
+        line-height: 0px;
+        /* padding: 20px; */
+        color: #FFFFFF;
+    }
+    img
+{
+    margin-top: 5%;height: auto;
+    width: 40%;
+    height: 40%;
+   
+}
+.ok
+{
+   margin-top: 36%;
+}
+  }
+
+@media only screen and (min-width: 600px) {
+
+    .artist{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    h1{
+        display: none;
+    }
+    .artist-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .artist-card-r{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+    }
+
+    .right{
+        width: 45%;
+        margin-top: 30px;
+        text-align: left;
+    }
+    #art-name{
+        text-align: left;
+        margin-left: 8.5%
+    }
+
+    #art-desc{
+        font-size: .87em;
+        text-align: left;
+    }
+
+    .sponsors-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sponsor{
+        width: 50vw;
+        height: 35vh;
+    }
+    #long{
+        width: 100vw;
+    }
+    .conveners-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .convener-profile{
+        width: 50%;
+        
+    }
+    .convener-img{
+        width: 28%;
+        margin-left: 32%;
+    }
+
+    .spon-img{
+        width: 30%;
+        height: 30%;
+        margin-bottom: 8%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    h1{
+        display: none;
+    }
+    .artist{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    #art-name{
+        text-align: left;
+        padding-left: 44px;
+    }
+
+    .sponsors-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sponsor{
+        width: 50%;
+        height: 33vh;
+    }
+    .spon-img{
+        width: 30%;
+        height: 30%;
+        margin-bottom: 8%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .artist{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+
+    .sponsors-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sponsor{
+        width: 50%;
+        height: 33vh;
+    }
+    .spon-img{
+        width: 15%;
+        height: 40%;
+        margin-bottom: 8%;
+    }
+}
